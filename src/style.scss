@@ -105,3 +105,63 @@ button.navbar-toggler.collapsed {
     border: 0px;
   }
 }
+
+// Footer
+footer {
+  background-color: #864825;
+}
+
+.footer-subtitle {
+  font-family: "Open Sans";
+  color: #000000;
+
+  @include for-desktop-up {
+    font-size: 1.5em;
+  }
+
+  @include for-phone-only {
+    font-size: 10px;
+  }
+}
+
+.footer-title-logo {
+  font-family: "Poppins";
+  color: #000000;
+  font-size: 4em;
+  font-weight: 700;
+
+  @include for-phone-only {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+  }
+}
+
+.footer-title {
+  font-family: "Poppins";
+  color: #000000;
+
+  font-size: 4em;
+  font-weight: 700;
+
+  @include for-phone-only {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+    text-align: center;
+  }
+}
+
+.copyright {
+  margin-top: -0.4em;
+
+  @include for-phone-only {
+    width: 8px;
+  }
+}
