@@ -1,5 +1,5 @@
 <template>
-  <div class="custom-navbar shadow" style="padding: 0rem">
+  <div class="custom-navbar shadow fixed-top" style="padding: 0rem">
     <b-navbar toggleable="md" type="light">
       <b-navbar-brand href="#">
         <img

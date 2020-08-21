@@ -1,6 +1,7 @@
 <template>
   <div>
     <header-vue></header-vue>
+    <router-view></router-view>
     <footer-vue></footer-vue>
   </div>
 </template>

@@ -3,6 +3,7 @@
 
 // Font Variable
 $poppins: "Poppins", sans-serif;
+$poor-story: "Poor Story", cursive;
 
 body {
   background-color: #ffec8a;
@@ -67,15 +68,31 @@ body {
   }
 }
 
+.nav-text {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+  border-bottom: 3px solid black;
+  color: rgba(0, 0, 0, 1);
+}
+
+.router-link-exact-active {
+  border-bottom: 3px solid black;
+}
+
 .custom-nav-item {
   @include for-phone-only {
     margin-top: 10px;
     padding: 0.1em;
     background-color: #fefdcd;
-
-    .nav-text {
-      margin-left: 15px;
-    }
 
     a span {
       margin-left: 15px;
@@ -109,6 +126,14 @@ button.navbar-toggler.collapsed {
 // Footer
 footer {
   background-color: #864825;
+
+  @include for-phone-only {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .footer-subtitle {
@@ -163,5 +188,73 @@ footer {
 
   @include for-phone-only {
     width: 8px;
+  }
+}
+
+// Home Pages
+.jumbotron.jumbotron-fluid {
+  margin-top: 69px;
+  background-image: url("./assets/desert-landingpage.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 724px !important;
+  position: relative;
+
+  .custom-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: $poppins;
+    color: #43393c;
+    font-size: 8em;
+    font-weight: 700;
+    text-shadow: 20px 10px 7px rgba(0, 0, 0, 0.25);
+
+    @include for-phone-only {
+      font-size: 33px;
+      font-weight: 700;
+      text-shadow: 9px 6px 7px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  @include for-phone-only {
+    height: 200px !important;
+  }
+}
+
+.creativity {
+  margin-top: 1em;
+  font-family: $poppins;
+  font-size: 4.3em;
+  font-weight: 800;
+  color: #d17f0f;
+  text-shadow: 7px 7px 4px rgba(0, 0, 0, 0.25);
+
+  @include for-phone-only {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 2em;
+  }
+}
+
+.creativity-subtitle {
+  font-family: $poor-story;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 50px;
+  color: #000000;
+  text-align: justify;
+  margin-top: 30px;
+  margin-bottom: 5em;
+
+  @include for-phone-only {
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 10px;
   }
 }
