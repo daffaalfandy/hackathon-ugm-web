@@ -1,0 +1,107 @@
+// Font import
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Poor+Story&family=Poppins:wght@400;700;800&family=Rokkitt:wght@500&display=swap");
+
+// Font Variable
+$poppins: "Poppins", sans-serif;
+
+body {
+  background-color: #ffec8a;
+  font-family: $poppins;
+}
+
+// Breakpoint
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
+
+// Navbar
+.custom-navbar {
+  @include for-desktop-up {
+    background-color: #fbc83b;
+  }
+
+  @include for-phone-only {
+    background-color: #ffec8a;
+  }
+}
+
+.custom-logo {
+  @include for-desktop-up {
+    width: 40%;
+    margin-left: 50px;
+  }
+
+  @include for-phone-only {
+    width: 50%;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #7a0b0b;
+  @include for-desktop-up {
+    font-size: 20px;
+  }
+
+  @include for-phone-only {
+    font-size: 14px;
+  }
+}
+
+.custom-nav-item {
+  @include for-phone-only {
+    margin-top: 10px;
+    padding: 0.1em;
+    background-color: #fefdcd;
+
+    .nav-text {
+      margin-left: 15px;
+    }
+
+    a span {
+      margin-left: 15px;
+    }
+
+    ul.dropdown-menu.dropdown-menu-right.show {
+      background: #fefdcd;
+      border: 0px;
+
+      //   li {
+      //     border: 1px solid #ccc;
+      //     border-radius: 16px;
+      //     margin-bottom: 10px;
+      //   }
+    }
+  }
+}
+
+button.navbar-toggler.not-collapsed {
+  @include for-phone-only {
+    border: 0px;
+  }
+}
+
+button.navbar-toggler.collapsed {
+  @include for-phone-only {
+    border: 0px;
+  }
+}
