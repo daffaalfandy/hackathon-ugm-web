@@ -9,9 +9,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h1 class="creativity">
-            Bring Your Creativity Here!
-          </h1>
+          <h1 class="creativity">Bring Your Creativity Here!</h1>
         </div>
       </div>
       <div class="row">
@@ -37,6 +35,7 @@
 export default {
   mounted() {
     document.getElementById("footer").classList.remove("fixed-bottom");
+    document.getElementById("footer").classList.add("footer-mobile");
   },
 };
 </script>

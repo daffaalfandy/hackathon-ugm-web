@@ -1,9 +1,14 @@
 // Font import
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Poor+Story&family=Poppins:wght@400;700;800&family=Rokkitt:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 
 // Font Variable
-$poppins: "Poppins", sans-serif;
-$poor-story: "Poor Story", cursive;
+$poppins: "Poppins",
+sans-serif;
+$poor-story: "Poor Story",
+cursive;
+$mulish: 'Mulish',
+sans-serif;
 
 body {
   background-color: #ffec8a;
@@ -59,6 +64,7 @@ body {
 
 .navbar-light .navbar-nav .nav-link {
   color: #7a0b0b;
+
   @include for-desktop-up {
     font-size: 20px;
   }
@@ -81,7 +87,7 @@ body {
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link:focus {
   border-bottom: 3px solid black;
-  color: rgba(0, 0, 0, 1);
+  color: #7a0b0b;
 }
 
 .router-link-exact-active {
@@ -127,6 +133,9 @@ button.navbar-toggler.collapsed {
 footer {
   background-color: #864825;
 
+}
+
+.footer-mobile {
   @include for-phone-only {
     position: fixed;
     left: 0;
@@ -256,5 +265,80 @@ footer {
     font-size: 13px;
     line-height: 16px;
     margin-top: 10px;
+  }
+}
+
+// Subtema
+.container-fluid {
+  background-color: #f69c14;
+  width: 95%;
+  border-radius: 10px;
+  margin-top: 7em;
+  margin-bottom: 5em;
+  padding-bottom: 3em;
+
+  @include for-phone-only {
+    margin-top: 6.5em;
+    margin-left: 2.5%;
+    margin-right: 10%;
+    margin-bottom: 4em;
+  }
+}
+
+.img-theme {
+  margin-left: 2em;
+  margin-top: 4em;
+  height: 300px;
+  width: auto;
+
+  @include for-phone-only {
+    margin-left: 4em;
+    margin-top: 2em;
+    height: 200px;
+    text-align: center;
+  }
+}
+
+.title-theme {
+  font-family: $poppins;
+  font-size: 4em;
+  font-weight: 800;
+  color: #FFFFFF;
+  text-shadow: 7px 7px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 1.2em;
+  text-transform: uppercase;
+
+  @include for-phone-only {
+    font-size: 2.4em;
+    text-align: center;
+    margin-top: 0.5em;
+  }
+}
+
+.subtitle-theme {
+  font-family: $mulish;
+  font-size: 1.5em;
+  color: #000000;
+  margin-top: 0.5em;
+  margin-right: 10em;
+  text-align: justify;
+
+  @include for-phone-only {
+    margin-right: 0px;
+    text-align: center;
+    font-size: 1.3em;
+  }
+}
+
+hr.subtheme {
+  display: none;
+
+  @include for-phone-only {
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), black, rgba(0, 0, 0, 0));
   }
 }

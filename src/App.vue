@@ -15,5 +15,8 @@ export default {
     "header-vue": Header,
     "footer-vue": Footer,
   },
+  mounted() {
+    console.log("Created By: Daffa Alfandy, Abyan Ahmad");
+  },
 };
 </script>
