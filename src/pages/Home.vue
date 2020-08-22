@@ -9,7 +9,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h1 class="creativity">Bring Your Creativity Here!</h1>
+          <h1 class="creativity fade-in">Bring Your Creativity Here!</h1>
         </div>
       </div>
       <div class="row">
@@ -30,6 +30,8 @@
     </div>
   </div>
 </template>
+
+
 
 <script>
 export default {
