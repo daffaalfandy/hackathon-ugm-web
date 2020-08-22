@@ -1,7 +1,9 @@
 <template>
   <div>
     <header-vue></header-vue>
-    <router-view></router-view>
+    <vue-page-transition name="fade-in-up">
+      <router-view />
+    </vue-page-transition>
     <footer-vue></footer-vue>
   </div>
 </template>

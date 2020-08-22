@@ -28,16 +28,20 @@
         </div>
       </div>
     </div>
+    <img
+      src="../assets/footer-img.svg"
+      class="mb-0 pb-0"
+      style="width: 100%"
+      alt="Footer Image"
+    />
   </div>
 </template>
-
-
 
 <script>
 export default {
   mounted() {
     document.getElementById("footer").classList.remove("fixed-bottom");
-    document.getElementById("footer").classList.add("footer-mobile");
+    document.getElementById("footer").classList.remove("footer-mobile");
   },
 };
 </script>

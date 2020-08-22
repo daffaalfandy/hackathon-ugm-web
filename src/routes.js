@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Subtema from './pages/Subtema'
 import Timeline from './pages/Timeline'
 import Prizes from './pages/Prizes'
+import Judges from './pages/Judges'
 
 Vue.use(VueRouter);
 
@@ -22,6 +23,10 @@ const routes = [{
   {
     path: '/prizes',
     component: Prizes
+  },
+  {
+    path: '/judges',
+    component: Judges
   }
 ];
 
