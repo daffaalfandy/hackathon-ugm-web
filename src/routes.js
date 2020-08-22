@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "./pages/Home";
 import Subtema from './pages/Subtema'
+import Timeline from './pages/Timeline'
 
 Vue.use(VueRouter);
 
@@ -12,6 +13,10 @@ const routes = [{
   {
     path: '/subtema',
     component: Subtema
+  },
+  {
+    path: '/timeline',
+    component: Timeline
   }
 ];
 
