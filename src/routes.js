@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "./pages/Home";
 import Subtema from './pages/Subtema'
 import Timeline from './pages/Timeline'
+import Prizes from './pages/Prizes'
 
 Vue.use(VueRouter);
 
@@ -17,6 +18,10 @@ const routes = [{
   {
     path: '/timeline',
     component: Timeline
+  },
+  {
+    path: '/prizes',
+    component: Prizes
   }
 ];
 

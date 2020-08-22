@@ -1,8 +1,8 @@
 <template>
   <div>
     <!-- Jumbotron -->
-    <div class="jumbotron jumbotron-fluid mb-0">
-      <h1 class="custom-title">HACK UGM</h1>
+    <div class="jumbotron jumbotron-fluid mb-0" id="main-jumbotron">
+      <h1 class="custom-title" id="main-title">HACK UGM</h1>
     </div>
 
     <!-- Content -->

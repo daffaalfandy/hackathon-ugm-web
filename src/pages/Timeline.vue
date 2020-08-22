@@ -15,11 +15,6 @@
               <br />Submisi Abstrak
             </h1>
             <p class="timeline-subtitle-2 text-right">
-              <!-- Pendaftaran lomba dilaksanakan secara online melalui
-              <b>
-                website HACK
-                UGM
-              </b> dengan menyertakan abstrak dalam kurun waktu-->
               <b>
                 <br />29 Agustus 2020 - 12 September 2020.
               </b>
@@ -29,18 +24,7 @@
             <div class="circle"></div>
             <div class="vertical mx-auto"></div>
           </div>
-          <div class="col-lg-5 col-sm-5 mx-auto">
-            <p class="timeline-subtitle-2 text-left" style="font-size: 2em">
-              <!-- Pendaftaran lomba dilaksanakan secara online melalui
-              <b>
-                website HACK
-                UGM
-              </b> dengan menyertakan abstrak dalam kurun waktu-->
-              <b>
-                <br />29 Agustus 2020 - 12 September 2020.
-              </b>
-            </p>
-          </div>
+          <div class="col-lg-5 col-sm-5 mx-auto"></div>
         </div>
         <div class="row desktop-view">
           <div class="col-lg-5 col-sm-5 mx-auto"></div>
@@ -50,9 +34,7 @@
           </div>
           <div class="col-lg-5 pr-5 col-sm-5 mx-auto mt-4">
             <h1 class="timeline-subtitle-1">Submisi Proposal</h1>
-            <p class="timeline-subtitle-2">
-              Dikumpulkan secara online melalui link yang terdapat di website UGM
-              setelah lolos seleksi abstrak dalam kurun waktu
+            <p class="timeline-subtitle-2 mt-4">
               <b>13-19 September 2020.</b>
             </p>
           </div>
@@ -64,17 +46,15 @@
               <br />Technical Meeting Babak Final
             </h1>
             <p class="pl-5 timeline-subtitle-2 text-right">
-              Pengumuman peserta yang lolos ke babak Final HACK UGM pada
               <b>
-                26
-                September 2020
-              </b>, dan TM Peserta pada
-              <b>27 September 2020.</b>
+                <br />26 September 2020 &
+                <br />27 September 2020.
+              </b>
             </p>
           </div>
           <div class="col-lg-2 col-sm-2">
             <div class="circle"></div>
-            <div class="vertical mx-auto"></div>
+            <div class="vertical mx-auto" style="height: 17em"></div>
           </div>
           <div class="col-lg-5 col-sm-5 mx-auto"></div>
         </div>
@@ -89,12 +69,8 @@
               Acara Utama
               <br />(Pembuatan Aplikasi)
             </h1>
-            <p class="timeline-subtitle-2">
-              Dilakukan secara online pada waktu
-              <b>
-                <br />27 September 2020 - 7 Oktober
-                2020.
-              </b>
+            <p class="timeline-subtitle-2 mt-4">
+              <b>27 September 2020 - 7 Oktober 2020.</b>
             </p>
           </div>
         </div>
@@ -104,11 +80,11 @@
               Pengumpulan &
               <br />Pengumuman Pemenang
             </h1>
-            <p class="pl-5 timeline-subtitle-2 text-right">
-              Pengumpulan aplikasi menyertakan video penjelasan aplikasi yang di
-              upload ke akun Instagram pada
-              <b>7 Oktober 2020.</b> Pengumuman pemenang dilakukan pada
-              <b>18 Oktober 2020.</b>
+            <p class="pl-5 timeline-subtitle-2 text-right mt-4">
+              <b>
+                7 Oktober 2020 &
+                <br />18 Oktober 2020
+              </b>
             </p>
           </div>
           <div class="col-lg-2 col-sm-2">
