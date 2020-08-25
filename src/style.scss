@@ -19,25 +19,25 @@ body {
   }
 }
 
-@mixin for-tablet-landscape-up {
-  @media (min-width: 900px) {
-    .vertical-footer a {
-      padding: 5px;
-      display: block;
-      margin-left: 120px;
-    }
+// @mixin for-tablet-landscape-up {
+//   @media (min-width: 900px) {
+//     .vertical-footer a {
+//       padding: 5px;
+//       display: block;
+//       margin-left: 120px;
+//     }
 
-    .vertical-title {
-      font-family: "Poppins";
-      font-size: 20px;
-      font-weight: 600;
-      color: #000000;
-      margin-top: 28px;
-    }
+//     .vertical-title {
+//       font-family: "Poppins";
+//       font-size: 20px;
+//       font-weight: 600;
+//       color: #000000;
+//       margin-top: 28px;
+//     }
 
-    @content;
-  }
-}
+//     @content;
+//   }
+// }
 
 @mixin for-desktop-up {
   @media (min-width: 1200px) {
@@ -151,9 +151,10 @@ footer {
 
 .footer-mobile {
   @include for-phone-only {
-    position: fixed;
+    position: -webkit-sticky;
+    position: sticky;
     left: 0;
-    bottom: 0;
+    top: 0;
     width: 100%;
   }
 }

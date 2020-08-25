@@ -14,8 +14,8 @@
         <strong>3 orang</strong>, sudah
         <strong>termasuk 1 orang kapten tim</strong><br />
         3. Tim yang dibentuk memiliki nama yang dibuat masing-masing tim <br />
-        4. Satu orang tidak boleh terdaftar di lebih dari 1 tim 5. Tidak ada
-        ketentuan tertentu asal fakultas dalam 1 tim 6.
+        4. Satu orang tidak boleh terdaftar di lebih dari 1 tim <br />5. Tidak
+        ada ketentuan tertentu asal fakultas dalam 1 tim <br />6.
         <strong>Minimal 1 orang </strong>memahami programming dan teknologi
         informasi untuk membuat MVP
       </h5>

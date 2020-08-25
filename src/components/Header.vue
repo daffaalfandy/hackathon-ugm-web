@@ -34,7 +34,11 @@
           <div class="custom-nav-item">
             <b-nav-item-dropdown right text="Pendaftaran & Pengumpulan">
               <!-- Using 'button-content' slot -->
-              <b-dropdown-item href="#">Pendaftaran</b-dropdown-item>
+              <b-dropdown-item
+                href="https://bit.ly/DaftarHACKUGM2020"
+                target="_blank"
+                >Pendaftaran</b-dropdown-item
+              >
               <b-dropdown-item href="#">Pengumpulan</b-dropdown-item>
             </b-nav-item-dropdown>
           </div>
