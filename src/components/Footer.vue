@@ -3,9 +3,9 @@
     <div class="container px-5">
       <div class="row">
         <div class="col-6 mt-3 text-left">
-          <p class="footer-subtitle text-left mb-0">Powered by</p>
-          <h1 class="footer-title-logo text-left">HACK UGM</h1>
-          <p class="footer-subtitle mb-0">Organized by</p>
+          <p class="footer-subtitle text-left mb-2">Powered by</p>
+          <h1 class="footer-title-logo text-left mb-4">HACK UGM</h1>
+          <p class="footer-subtitle mb-2">Organized by</p>
           <h1 class="footer-title text-left">BEM KM UGM</h1>
         </div>
         <div class="col-6 mt-3 float-left">
@@ -21,6 +21,16 @@
               >Sponsor</router-link
             >
             <a href="#" class="vertical-menu mb-0 pb-0">Guidebook</a>
+            <a href="https://www.instagram.com/bemkm_ugm/" target="_blank">
+              <img
+                src="../assets/instagram-icon.svg"
+                class="footer-icon vertical-menu mb-0 pb-0"
+                alt="Instagram Icon"
+              />
+              <span class="ml-2" style="color: black; font-size: 0.8em;"
+                >bemkm_ugm</span
+              >
+            </a>
           </div>
         </div>
       </div>

@@ -147,10 +147,10 @@ button.navbar-toggler.collapsed {
 // Footer
 footer {
   background-color: #864825;
-  height: 305px;
+  height: 340px;
 
   @include for-phone-only {
-    height: 250px;
+    height: 285px;
   }
 
   .router-link-exact-active {
@@ -164,6 +164,14 @@ footer {
       position: absolute;
       bottom: 0;
     }
+  }
+}
+
+.footer-icon {
+  width: 2em;
+
+  @include for-phone-only {
+    width: 1.5em;
   }
 }
 
