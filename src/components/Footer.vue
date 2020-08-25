@@ -12,7 +12,7 @@
           <div class="vertical-footer">
             <h5 class="vertical-title text-left mb-1 pb-0">Quick Links</h5>
             <router-link to="/about" tag="a" class="vertical-menu mb-0 pb-0"
-              >Abous Us</router-link
+              >About Us</router-link
             >
             <router-link to="/faq" tag="a" class="vertical-menu mb-0 pb-0"
               >FAQ</router-link
