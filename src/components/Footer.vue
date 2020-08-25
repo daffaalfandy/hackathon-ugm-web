@@ -1,8 +1,5 @@
 <template>
-  <footer
-    class="page-footer text-light footer fixed-bottom mb-0 mt-0"
-    id="footer"
-  >
+  <footer class="text-light footer fixed-bottom " id="footer">
     <div class="container px-5">
       <div class="row">
         <div class="col-6 mt-3 text-left">

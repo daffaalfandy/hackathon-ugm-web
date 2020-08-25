@@ -14,7 +14,6 @@ body {
   background-color: #feff99;
   font-family: $poppins;
   height: 100%;
-  min-height: 100%;
 }
 
 // Breakpoint
@@ -148,20 +147,23 @@ button.navbar-toggler.collapsed {
 // Footer
 footer {
   background-color: #864825;
+  height: 305px;
+
+  @include for-phone-only {
+    height: 250px;
+  }
 
   .router-link-exact-active {
     border-bottom: none;
   }
 }
 
-.footer-mobile,
-.container-fluid:after {
+.footer-mobile {
   @include for-phone-only {
-    clear: both;
-    position: absolute;
-    -webkit-position: absolute;
-    bottom: 0;
-    width: 100%;
+    @media (min-height: 677px) {
+      position: absolute;
+      bottom: 0;
+    }
   }
 }
 
@@ -406,6 +408,7 @@ h5 {
   margin-top: 7em;
   margin-bottom: 5em;
   padding-bottom: 3em;
+  min-height: 100%;
 
   @include for-phone-only {
     margin-top: 6.5em;
