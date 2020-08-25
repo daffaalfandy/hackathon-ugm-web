@@ -7,9 +7,7 @@
     </div>
     <div class="row custom-container">
       <img class="prize-background" src="../assets/judges-background.svg" />
-      <h1 class="centered-text shine">
-        TOTAL HADIAH JUTAAN RUPIAH! & SERTIFIKAT PESERTA
-      </h1>
+      <h1 class="centered-text shine">TOTAL HADIAH JUTAAN RUPIAH! & SERTIFIKAT PESERTA</h1>
     </div>
   </div>
 </template>

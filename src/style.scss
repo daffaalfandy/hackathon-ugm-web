@@ -21,6 +21,20 @@ body {
 
 @mixin for-tablet-landscape-up {
   @media (min-width: 900px) {
+    .vertical-footer a {
+      padding: 5px;
+      display: block;
+      margin-left: 120px;
+    }
+
+    .vertical-title {
+      font-family: "Poppins";
+      font-size: 20px;
+      font-weight: 600;
+      color: #000000;
+      margin-top: 28px;
+    }
+
     @content;
   }
 }
@@ -129,6 +143,10 @@ button.navbar-toggler.collapsed {
 // Footer
 footer {
   background-color: #864825;
+
+  .router-link-exact-active {
+    border-bottom: none;
+  }
 }
 
 .footer-mobile {
@@ -146,19 +164,20 @@ footer {
   color: #000000;
 
   @include for-desktop-up {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 
   @include for-phone-only {
-    font-size: 10px;
+    font-size: 0.7em;
   }
 }
 
 .footer-title-logo {
-  font-family: "Poppins";
+  font-family: $poppins;
   color: #000000;
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 700;
+  text-shadow: 20px 10px 7px rgba(0, 0, 0, 0.25);
 
   @include for-phone-only {
     font-family: Poppins;
@@ -170,11 +189,19 @@ footer {
   }
 }
 
-.footer-title {
-  font-family: "Poppins";
-  color: #000000;
+.footer-logo {
+  width: auto;
+  height: 60px;
 
-  font-size: 4em;
+  @include for-phone-only {
+    height: 2.5em;
+  }
+}
+
+.footer-title {
+  font-family: $poppins;
+  color: #000000;
+  font-size: 3em;
   font-weight: 700;
 
   @include for-phone-only {
@@ -190,9 +217,59 @@ footer {
 
 .copyright {
   margin-top: -0.4em;
+  color: #000;
 
   @include for-phone-only {
-    width: 8px;
+    width: 0.8em;
+  }
+}
+
+.first-footer-logo {
+  @include for-phone-only {
+    margin-left: 4.5em;
+  }
+}
+
+.text-copyright {
+  color: black;
+  text-align: right;
+
+  @include for-phone-only {
+    font-size: 0.8em;
+    text-align: center;
+  }
+}
+
+.vertical-footer a,
+h5 {
+  padding: 5px;
+  display: block;
+  margin-left: 120px;
+
+  @include for-phone-only {
+    margin-left: 0px;
+  }
+}
+
+.vertical-title {
+  font-family: $poppins;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #000000;
+
+  @include for-phone-only {
+    font-size: 0.8em;
+  }
+}
+
+.vertical-menu {
+  font-family: $poppins;
+  font-size: 1em;
+  font-weight: 400;
+  color: #000000;
+
+  @include for-phone-only {
+    font-size: 0.7em;
   }
 }
 
