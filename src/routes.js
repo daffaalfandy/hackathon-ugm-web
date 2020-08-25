@@ -6,6 +6,9 @@ import Timeline from './pages/Timeline'
 import Prizes from './pages/Prizes'
 import Judges from './pages/Judges'
 import Sk from './pages/Sk'
+import About from './pages/About'
+import Faq from './pages/Faq'
+import Sponsor from './pages/Sponsor'
 
 Vue.use(VueRouter);
 
@@ -32,6 +35,18 @@ const routes = [{
   {
     path: '/sk',
     component: Sk
+  },
+  {
+    path: '/about',
+    component: About
+  },
+  {
+    path: '/faq',
+    component: Faq
+  },
+  {
+    path: '/sponsor',
+    component: Sponsor
   }
 ];
 

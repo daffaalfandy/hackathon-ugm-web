@@ -20,7 +20,12 @@
             <router-link tag="a" to="/sponsor" class="vertical-menu mb-0 pb-0"
               >Sponsor</router-link
             >
-            <a href="#" class="vertical-menu mb-0 pb-0">Guidebook</a>
+            <a
+              href="https://drive.google.com/drive/u/0/folders/1LD2a38SdPn-AGjf1CnsHCJ_Iqs4l2kB6"
+              target="_blank"
+              class="vertical-menu mb-0 pb-0"
+              >Guidebook</a
+            >
             <a href="https://www.instagram.com/bemkm_ugm/" target="_blank">
               <img
                 src="../assets/instagram-icon.svg"

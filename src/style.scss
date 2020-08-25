@@ -707,3 +707,43 @@ hr.hr-timeline {
     left: 45%;
   }
 }
+
+// About us
+.about-us {
+  font-size: 1.5em;
+  font-family: $poor-story;
+  text-align: justify;
+
+  @include for-phone-only {
+    font-size: 0.8em;
+  }
+}
+
+// Faq
+.faq-answer {
+  font-family: $poppins;
+  font-size: 1em;
+  font-weight: 400;
+  color: black;
+  margin-top: 1.2em;
+  text-align: justify;
+
+  @include for-phone-only {
+    font-size: 0.7em;
+    text-align: justify;
+  }
+}
+
+.faq-question {
+  font-family: $poppins;
+  font-size: 2em;
+  font-weight: 600;
+  color: #d17f0f;
+
+  @include for-phone-only {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 2em;
+  }
+}
