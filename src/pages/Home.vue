@@ -2,7 +2,9 @@
   <div>
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid mb-0" id="main-jumbotron">
-      <h1 class="custom-title" id="main-title">HACK UGM</h1>
+      <h1 v-if="loaded === true" class="custom-title" id="main-title">
+        HACK UGM
+      </h1>
     </div>
 
     <!-- Content -->
@@ -39,9 +41,17 @@
 
 <script>
 export default {
+  data() {
+    return {
+      loaded: false,
+    };
+  },
   mounted() {
     document.getElementById("footer").classList.remove("fixed-bottom");
     document.getElementById("footer").classList.remove("footer-mobile");
+  },
+  created() {
+    this.loaded = true;
   },
 };
 </script>
