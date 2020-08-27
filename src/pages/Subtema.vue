@@ -1,14 +1,10 @@
 <template>
   <div class="container-fluid shadow">
     <div class="row">
-      <div class="col-md-4 col-sm-12">
-        <img
-          src="../assets/education.png"
-          alt="Education Image"
-          class="img-theme"
-        />
+      <div class="col-lg-4 col-md-5 col-sm-12">
+        <img src="../assets/education.png" alt="Education Image" class="img-theme" />
       </div>
-      <div class="col-md-8 col-sm-12">
+      <div class="col-lg-8 col-md-7 col-sm-12">
         <h1 class="title-theme">Education</h1>
         <p class="subtitle-theme">
           Inovasi teknologi yang dapat membantu mahasiswa UGM dalam berbagai
@@ -19,10 +15,10 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4 col-sm-12">
+      <div class="col-lg-4 col-md-5 col-sm-12">
         <img src="../assets/salth.png" alt="Salth Image" class="img-theme" />
       </div>
-      <div class="col-md-8 col-sm-12">
+      <div class="col-lg-8 col-md-7 col-sm-12">
         <h1 class="title-theme">Salth</h1>
         <p class="subtitle-theme">
           Inovasi teknologi berbasis aplikasi atau web yang dapat mengakses
@@ -34,14 +30,10 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4 col-sm-12">
-        <img
-          src="../assets/entertainment.png"
-          alt="Entertainment Image"
-          class="img-theme"
-        />
+      <div class="col-lg-4 col-md-5 col-sm-12">
+        <img src="../assets/entertainment.png" alt="Entertainment Image" class="img-theme" />
       </div>
-      <div class="col-md-8 col-sm-12">
+      <div class="col-lg-8 col-md-7 col-sm-12">
         <h1 class="title-theme">Entertainment</h1>
         <p class="subtitle-theme">
           Inovasi teknologi yang dapat meningkatkan kualitas interaksi antar
@@ -52,14 +44,10 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4 col-sm-12">
-        <img
-          src="../assets/acavices.png"
-          alt="Acavices Image"
-          class="img-theme"
-        />
+      <div class="col-lg-4 col-md-5 col-sm-12">
+        <img src="../assets/acavices.png" alt="Acavices Image" class="img-theme" />
       </div>
-      <div class="col-md-8 col-sm-12">
+      <div class="col-lg-8 col-md-7 col-sm-12">
         <h1 class="title-theme">Acavices</h1>
         <p class="subtitle-theme">
           Inovasi teknologi yang dapat memudahkan mahasiswa UGM dalam proses

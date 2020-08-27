@@ -23,25 +23,11 @@ body {
   }
 }
 
-// @mixin for-tablet-landscape-up {
-//   @media (min-width: 900px) {
-//     .vertical-footer a {
-//       padding: 5px;
-//       display: block;
-//       margin-left: 120px;
-//     }
-
-//     .vertical-title {
-//       font-family: "Poppins";
-//       font-size: 20px;
-//       font-weight: 600;
-//       color: #000000;
-//       margin-top: 28px;
-//     }
-
-//     @content;
-//   }
-// }
+@mixin for-tablet-only {
+  @media (min-width: 600px) and (max-width: 1199px) {
+    @content;
+  }
+}
 
 @mixin for-desktop-up {
   @media (min-width: 1200px) {
@@ -61,6 +47,10 @@ body {
     background-color: #fbc83b;
   }
 
+  @include for-tablet-only {
+    background-color: #fbc83b;
+  }
+
   @include for-phone-only {
     background-color: #ffec8a;
   }
@@ -70,6 +60,12 @@ body {
   @include for-desktop-up {
     width: 40%;
     margin-left: 50px;
+  }
+
+  @include for-tablet-only() {
+    width: 90%;
+    // margin-left: 10px;
+    // margin-right: 40px;
   }
 
   @include for-phone-only {
@@ -122,13 +118,11 @@ body {
     ul.dropdown-menu.dropdown-menu-right.show {
       background: #fefdcd;
       border: 0px;
-
-      //   li {
-      //     border: 1px solid #ccc;
-      //     border-radius: 16px;
-      //     margin-bottom: 10px;
-      //   }
     }
+  }
+
+  @include for-tablet-only() {
+    font-size: 0.85em;
   }
 }
 
@@ -150,7 +144,11 @@ footer {
   height: 340px;
 
   @include for-phone-only {
-    height: 285px;
+    height: 295px;
+  }
+
+  @include for-tablet-only() {
+    height: 295px;
   }
 
   .router-link-exact-active {
@@ -165,6 +163,12 @@ footer {
       bottom: 0;
     }
   }
+
+  @include for-tablet-only() {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+  }
 }
 
 .footer-icon {
@@ -173,10 +177,14 @@ footer {
   @include for-phone-only {
     width: 1.5em;
   }
+
+  @include for-tablet-only() {
+    width: 1.75em;
+  }
 }
 
 .footer-subtitle {
-  font-family: "Open Sans";
+  font-family: $poppins;
   color: #000000;
 
   @include for-desktop-up {
@@ -185,6 +193,10 @@ footer {
 
   @include for-phone-only {
     font-size: 0.7em;
+  }
+
+  @include for-tablet-only() {
+    font-size: 0.9em;
   }
 }
 
@@ -196,12 +208,15 @@ footer {
   text-shadow: 20px 10px 7px rgba(0, 0, 0, 0.25);
 
   @include for-phone-only {
-    font-family: Poppins;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 27px;
     text-align: center;
+  }
+
+  @include for-tablet-only() {
+    font-size: 1.5em;
   }
 }
 
@@ -210,6 +225,10 @@ footer {
   height: 60px;
 
   @include for-phone-only {
+    height: 2.5em;
+  }
+
+  @include for-tablet-only() {
     height: 2.5em;
   }
 }
@@ -226,17 +245,11 @@ footer {
     font-size: 18px;
     line-height: 27px;
     /* identical to box height */
-
     text-align: center;
   }
-}
 
-.copyright {
-  margin-top: -0.4em;
-  color: #000;
-
-  @include for-phone-only {
-    width: 0.8em;
+  @include for-tablet-only() {
+    font-size: 1.5em;
   }
 }
 
@@ -253,6 +266,10 @@ footer {
   @include for-phone-only {
     font-size: 0.8em;
     text-align: center;
+  }
+
+  @include for-tablet-only() {
+    font-size: 0.9em;
   }
 }
 
@@ -276,6 +293,10 @@ h5 {
   @include for-phone-only {
     font-size: 0.8em;
   }
+
+  @include for-tablet-only() {
+    font-size: 1em;
+  }
 }
 
 .vertical-menu {
@@ -286,6 +307,10 @@ h5 {
 
   @include for-phone-only {
     font-size: 0.7em;
+  }
+
+  @include for-tablet-only() {
+    font-size: 0.9em;
   }
 }
 
@@ -328,6 +353,15 @@ h5 {
       font-weight: 700;
       text-shadow: 9px 6px 7px rgba(0, 0, 0, 0.25);
     }
+
+    @include for-tablet-only() {
+      font-size: 4.5em;
+    }
+  }
+
+  @include for-tablet-only() {
+    background-size: 100% auto;
+    height: 385px !important;
   }
 
   /* The typing effect */
@@ -388,6 +422,12 @@ h5 {
     line-height: 27px;
     margin-top: 2em;
   }
+
+  @include for-tablet-only() {
+    font-size: 2.5em;
+    margin-top: 1.5em;
+    margin-bottom: 0em;
+  }
 }
 
 .creativity-subtitle {
@@ -405,6 +445,10 @@ h5 {
     font-size: 13px;
     line-height: 16px;
     margin-top: 10px;
+  }
+
+  @include for-tablet-only() {
+    font-size: 2em;
   }
 }
 
@@ -438,6 +482,11 @@ h5 {
     height: 200px;
     text-align: center;
   }
+
+  @include for-tablet-only() {
+    height: 15em;
+    width: auto;
+  }
 }
 
 .title-theme {
@@ -454,6 +503,11 @@ h5 {
     text-align: center;
     margin-top: 0.5em;
   }
+
+  @include for-tablet-only() {
+    font-size: 2.5em;
+    margin-top: 1.5em;
+  }
 }
 
 .subtitle-theme {
@@ -468,6 +522,10 @@ h5 {
     margin-right: 0px;
     text-align: center;
     font-size: 1.3em;
+  }
+
+  @include for-tablet-only() {
+    margin-right: 1em;
   }
 }
 
@@ -501,6 +559,10 @@ hr.subtheme {
     margin-left: auto;
     height: 5em;
   }
+
+  @include for-tablet-only() {
+    height: 6.5em;
+  }
 }
 
 .timeline-title {
@@ -515,6 +577,11 @@ hr.subtheme {
   @include for-phone-only {
     font-size: 2.5em;
     margin-bottom: 2.4em;
+  }
+
+  @include for-tablet-only() {
+    font-size: 4em;
+    margin-bottom: 1.15em;
   }
 }
 
@@ -532,6 +599,10 @@ hr.subtheme {
     width: 90%;
     margin-top: -6.5em;
   }
+
+  @include for-tablet-only() {
+    margin-top: -8em;
+  }
 }
 
 .circle {
@@ -546,9 +617,13 @@ hr.subtheme {
   @include for-phone-only {
     width: 2.5em;
     height: 2.5em;
-    // margin-top: -5em;
     position: relative;
     float: right;
+  }
+
+  @include for-tablet-only() {
+    width: 80px;
+    height: 80px;
   }
 }
 
@@ -565,6 +640,11 @@ hr.subtheme {
     margin-left: -0.2em;
     margin-bottom: 0;
   }
+
+  @include for-tablet-only() {
+    height: 12em;
+    margin-top: -0.2em;
+  }
 }
 
 .timeline-subtitle-1 {
@@ -575,6 +655,10 @@ hr.subtheme {
 
   @include for-phone-only {
     font-size: 1em;
+  }
+
+  @include for-tablet-only() {
+    font-size: 1.5em;
   }
 }
 
@@ -594,7 +678,10 @@ hr.subtheme {
   @include for-phone-only {
     font-size: 0.9em;
     text-align: left;
-    color: white;
+  }
+
+  @include for-tablet-only() {
+    font-size: 1.4em;
   }
 }
 
@@ -606,6 +693,10 @@ hr.subtheme {
 
 .mobile-view {
   @include for-desktop-up {
+    display: none;
+  }
+
+  @include for-tablet-only() {
     display: none;
   }
 }
@@ -658,6 +749,11 @@ hr.hr-timeline {
     margin-top: -8em;
     width: 20%;
   }
+
+  @include for-tablet-only() {
+    width: 15%;
+    margin-top: -10em;
+  }
 }
 
 .centered-text {
@@ -677,6 +773,12 @@ hr.hr-timeline {
     width: 80%;
     margin-left: 5%;
     margin-right: 1em;
+  }
+
+  @include for-tablet-only() {
+    font-size: 3.25em;
+    margin-left: 0.5em;
+    width: 80%;
   }
 }
 
@@ -705,6 +807,10 @@ hr.hr-timeline {
     margin-left: 5%;
     margin-right: 1em;
     left: 45%;
+  }
+
+  @include for-tablet-only() {
+    font-size: 1.25em;
   }
 }
 
