@@ -17,7 +17,7 @@
 export default {
   mounted() {
     document.getElementById("footer").classList.add("fixed-bottom");
-    document.getElementById("footer").classList.add("footer-mobile");
+    // document.getElementById("footer").classList.add("footer-mobile");
   },
 };
 </script>

@@ -3,12 +3,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 
 // Font Variable
-$poppins: "Poppins",
-sans-serif;
-$poor-story: "Poor Story",
-cursive;
-$mulish: "Mulish",
-sans-serif;
+$poppins: "Poppins", sans-serif;
+$poor-story: "Poor Story", cursive;
+$mulish: "Mulish", sans-serif;
 
 body {
   background-color: #feff99;
@@ -153,6 +150,12 @@ footer {
 
   .router-link-exact-active {
     border-bottom: none;
+  }
+}
+
+.fixed-bottom {
+  @include for-phone-only {
+    position: relative;
   }
 }
 
@@ -392,7 +395,6 @@ h5 {
 
   /* The typewriter cursor effect */
   @keyframes blink-caret {
-
     from,
     to {
       border-color: transparent;
@@ -538,10 +540,12 @@ hr.subtheme {
     margin-right: 10%;
     margin-bottom: 0;
     height: 1px;
-    background-image: linear-gradient(to right,
-        rgba(0, 0, 0, 0),
-        black,
-        rgba(0, 0, 0, 0));
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      black,
+      rgba(0, 0, 0, 0)
+    );
   }
 }
 
@@ -714,10 +718,12 @@ hr.hr-timeline {
   display: inline-block;
   position: relative;
   font-family: $poppins;
-  -webkit-mask-image: linear-gradient(-75deg,
-      rgba(0, 0, 0, 0.6) 30%,
-      #000 50%,
-      rgba(0, 0, 0, 0.6) 70%);
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
   -webkit-mask-size: 200%;
   animation: shine 2s linear infinite;
 }
