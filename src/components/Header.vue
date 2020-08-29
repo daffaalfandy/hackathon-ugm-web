@@ -2,7 +2,11 @@
   <div class="custom-navbar shadow fixed-top" style="padding: 0rem">
     <b-navbar toggleable="md" type="light">
       <b-navbar-brand href="/">
-        <img src="../assets/logo.png" alt="Hackathon Logo" class="custom-logo" />
+        <img
+          src="../assets/logo.png"
+          alt="Hackathon Logo"
+          class="custom-logo"
+        />
       </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -31,8 +35,16 @@
           <div class="custom-nav-item">
             <b-nav-item-dropdown right text="Pendaftaran & Pengumpulan">
               <!-- Using 'button-content' slot -->
-              <b-dropdown-item href="https://bit.ly/DaftarHACKUGM2020" target="_blank">Pendaftaran</b-dropdown-item>
-              <b-dropdown-item href="#">Pengumpulan</b-dropdown-item>
+              <b-dropdown-item
+                href="https://bit.ly/DaftarHACKUGM2020"
+                target="_blank"
+                >Pendaftaran</b-dropdown-item
+              >
+              <b-dropdown-item
+                href="https://bit.ly/SubmisiHACKUGM"
+                target="_blank"
+                >Pengumpulan</b-dropdown-item
+              >
             </b-nav-item-dropdown>
           </div>
         </b-navbar-nav>
