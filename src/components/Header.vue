@@ -2,11 +2,20 @@
   <div class="custom-navbar shadow fixed-top" style="padding: 0rem">
     <b-navbar toggleable="md" type="light">
       <b-navbar-brand href="/">
-        <img
+        <!-- <img
           src="../assets/logo.png"
           alt="Hackathon Logo"
           class="custom-logo"
-        />
+        /> -->
+        <picture>
+          <source srcset="../assets/logo.webp" type="images/webp" />
+          <source srcset="../assets/logo.png" type="images/png" />
+          <img
+            src="../assets/logo.png"
+            class="custom-logo"
+            alt="Hack UGM Logo"
+          />
+        </picture>
       </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
