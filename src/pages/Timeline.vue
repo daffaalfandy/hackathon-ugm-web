@@ -35,7 +35,7 @@
           <div class="col-lg-5 pr-5 col-sm-5 mx-auto mt-4">
             <h1 class="timeline-subtitle-1">Submisi Proposal</h1>
             <p class="timeline-subtitle-2 mt-4">
-              <b>13-19 September 2020.</b>
+              <b>13-21 September 2020.</b>
             </p>
           </div>
         </div>
@@ -83,7 +83,7 @@
             <p class="pl-5 timeline-subtitle-2 text-right mt-4">
               <b>
                 7 Oktober 2020 &
-                <br />18 Oktober 2020
+                <br />11 Oktober 2020
               </b>
             </p>
           </div>
@@ -118,7 +118,7 @@
           <div class="col-10">
             <h1 class="timeline-subtitle-1 mt-2">Submisi Proposal</h1>
             <p class="timeline-subtitle-2">
-              <b>13-19 September 2020.</b>
+              <b>13-21 September 2020.</b>
             </p>
           </div>
         </div>
@@ -174,7 +174,7 @@
             <p class="timeline-subtitle-2">
               <b>
                 Pengumpulan aplikasi, 7 Oktober 2020.
-                <br />Pengumuman pemenang, 18 Oktober 2020.
+                <br />Pengumuman pemenang, 11 Oktober 2020.
               </b>
             </p>
           </div>
