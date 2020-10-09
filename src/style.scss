@@ -865,3 +865,10 @@ hr.hr-timeline {
   font-family: $poppins;
 
 }
+
+// Sponsor
+.long-logo {
+  @include for-phone-only {
+    max-width: 75%;
+  }
+}
